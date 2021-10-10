@@ -41,6 +41,8 @@ android {
     }
 }
 
+
+
 dependencies {
     implementation fileTree(dir: 'libs', include: '*.jar')
     implementation 'com.codepath.libraries:android-oauth-handler:2.4.0'
@@ -56,4 +58,6 @@ dependencies {
     annotationProcessor "androidx.room:room-compiler:$room_version"
     implementation 'com.facebook.stetho:stetho:1.5.1'
     implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.0.0'
+    implementation 'org.parceler:parceler-api:1.1.12'
+    annotationProcessor 'org.parceler:parceler:1.1.12'
 }

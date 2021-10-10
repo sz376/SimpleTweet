@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ComposeActivity">
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:counterEnabled="true"
+        app:counterMaxLength="280"
+        app:counterTextAppearance="@style/counterText"
+        app:counterOverflowTextAppearance="@style/counterOverride">
+
+        <EditText
+            android:id="@+id/etCompose"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:ems="10"
+            android:gravity="start|top"
+            android:hint="@string/what_s_happening"
+            android:inputType="textMultiLine"
+            android:minLines="5"
+            tools:ignore="SpeakableTextPresentCheck" />
+        <Button
+            android:id="@+id/btnTweet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etCompose"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:text="@string/tweet" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+</RelativeLayout>

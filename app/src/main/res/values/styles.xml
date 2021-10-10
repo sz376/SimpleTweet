@@ -7,11 +7,16 @@
             backward-compatibility can go here.
         -->
         <item name="colorPrimary">#1DA1F2</item>
+
     </style>
 
     <!-- Application theme. -->
     <style name="AppTheme" parent="AppBaseTheme">
         <!-- All customizations that are NOT specific to a particular API-level can go here. -->
     </style>
+
+    <style name="counterText"></style>
+
+    <style name="counterOverride"></style>
 
 </resources>
